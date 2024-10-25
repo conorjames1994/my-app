@@ -1,0 +1,7 @@
+.transaction{
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}

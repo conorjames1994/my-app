@@ -1,0 +1,17 @@
+.addition{
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.section{
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
