@@ -4,6 +4,7 @@
   "description": "back-end",
   "main": "server.js",
   "scripts": {
+    "build": "vite build",
     "start": "node server",
     "server": "nodemon server",
     "client": "npm run dev --prefix client",
