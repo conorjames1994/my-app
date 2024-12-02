@@ -20,7 +20,7 @@ export const GlobalProvider = ({ children }) => {
 
   //actions
   async function getTransactions(){
-  const res = await axios.get('http://localhost:5000/api/v1/transactions');
+  const res = await axios.get('https://cjsexpensestracker.onrender.com');
    
    dispatch({
     type: "GET_TRANSACTIONS",
@@ -29,7 +29,7 @@ export const GlobalProvider = ({ children }) => {
   }
 
   async function deleteTransaction(id){
-    const res = await axios.delete(`http://localhost:5000/api/v1/transactions/${id}`);
+    const res = await axios.delete(`https://cjsexpensestracker.onrender.com/${id}`);
     
     if(res.data.success === true){
       dispatch(
@@ -45,7 +45,7 @@ export const GlobalProvider = ({ children }) => {
   }
 
   async function addTransaction(transaction){
-    const res = await axios.post('http://localhost:5000/api/v1/transactions', transaction);
+    const res = await axios.post('https://cjsexpensestracker.onrender.com', transaction);
     console.log(res)
     if(res.data.success === true){
  dispatch(
