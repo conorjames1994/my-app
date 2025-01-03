@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { GlobalContext } from '../Context/GlobalState';
-import styles from './balance.module.css'
+import styles from './Balance.module.css'
 
 export const Balance = () => {
 
