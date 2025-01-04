@@ -29,7 +29,7 @@ export const GlobalProvider = ({ children }) => {
   }
 
   async function deleteTransaction(id){
-    const res = await axios.delete(`https://expensestracker-server.onrender.com/${id}`);
+    const res = await axios.delete(`https://expensestracker-server.onrender.com/api/v1/transactions/${id}`);
     
     if(res.data.success === true){
       dispatch(
@@ -45,7 +45,7 @@ export const GlobalProvider = ({ children }) => {
   }
 
   async function addTransaction(transaction){
-    const res = await axios.post('https://expensestracker-server.onrender.com', transaction);
+    const res = await axios.post('https://expensestracker-server.onrender.com/api/v1/transactions/', transaction);
     console.log(res)
     if(res.data.success === true){
  dispatch(
