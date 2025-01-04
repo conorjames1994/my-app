@@ -4,7 +4,7 @@ dotenv.config({path: './config/config.env'});
 
 const connectDB = async () => {
 try{
-  const conn = await mongoose.connect("mongodb://localhost:27017/transactions")
+  const conn = await mongoose.connect("mongodb+srv://conorjames:expensestracker@cluster0.7siir.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
   console.log(`Mongo db connected ${conn.connection.host}`.cyan.underline.bold)
 }
@@ -15,3 +15,5 @@ catch(err){
 }
 
 module.exports = connectDB;
+
+// mongodb atlas login -conorjames, password-  expensestracker
