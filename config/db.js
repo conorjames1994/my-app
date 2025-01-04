@@ -4,7 +4,7 @@ dotenv.config({path: './config/config.env'});
 
 const connectDB = async () => {
 try{
-  const conn = await mongoose.connect("mongodb+srv://conor.james%40nhs.net:Afc123cbj@cluster0.7siir.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+  const conn = await mongoose.connect("mongodb+srv://conorjames:expensestrackerj@cluster0.7siir.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
   console.log(`Mongo db connected ${conn.connection.host}`.cyan.underline.bold)
 }
